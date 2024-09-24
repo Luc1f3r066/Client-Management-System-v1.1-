@@ -15,7 +15,9 @@ A **Cross-Site Scripting (XSS)** vulnerability has been identified in the **Clie
 This vulnerability occurs due to inadequate input sanitization in the `Between Dates Reports` parameter of the `clientms/admin/bwdates-reports-ds.php` endpoint. The application fails to properly validate user input, allowing attackers to inject and execute malicious scripts. When a user interacts with a crafted link, these scripts can run in the victim's browser. 
 
 This vulnerability poses several security risks, including unauthorized script execution and potential exposure of sensitive data.
+
 **Vulnerable Endpoint:** `(clientms/admin/bwdates-reports-ds.php)`  
+
 **Vulnerable Parameter:** `Between Dates Reports`
 
 ## Proof of Concept (PoC)
